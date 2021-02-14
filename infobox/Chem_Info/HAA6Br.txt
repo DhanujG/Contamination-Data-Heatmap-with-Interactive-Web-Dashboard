@@ -1,0 +1,23 @@
+Haloacetic acids (HAA5, HAA6Br, HAA9) are a group of disinfectant byproducts that are formed when disinfectants, such as chlorine or chloramine, are used to treat water and react with naturally occurring organic and inorganic matter present in source waters.{1}
+
+HAA6Br includes bromochloroacetic acid, bromodichloroacetic acid, dibromoacetic acid, chlorodibromoacetic acid, monobromoacetic acid, tribromoacetic acid.{2}
+
+Data from research studies indicate that several HAAs, e.g., dichloroacetic acid and trichloroacetic acid, may be carcinogenic in laboratory animals. Exposure to other HAAs has also been associated with reproductive and developmental effects in laboratory animals. The current Maximum Contaminant Level (MCL) set for HAA5 is because of concern that exposure to HAAs over many years may increase the risk of cancer.{1}
+
+Levels of HAAs in water can vary from day to day depending on such things as the amount of acid in the water, the season,  water temperature, concentration of chlorine, and the amount of plant material in the water.{3}
+
+To protect human health, the U.S. Environmental Protection Agency (EPA) has established an acceptable maximum HAAs level for public drinking water.  This level is called the HAAs maximum contaminant level (MCL) and is measured in parts per billion (ppb). The HAAs MCL is 60 ppb for public drinking water. Public drinking water with HAAs MCL measurements below this level is considered safe to drink.{3}
+
+1. https://drinktap.org/Water-Info/Whats-in-My-Water/Haloacetic-Acids#:~:text=Haloacetic%20acids%20(HAA5%2C%20HAA6Br%2C,matter%20present%20in%20source%20waters
+
+2. https://www.epa.gov/sites/production/files/2018-05/documents/ucmr4-refconc-180514.pdf
+
+3. https://www.vdh.virginia.gov/environmental-epidemiology/fact-sheets-for-public-health/frequently-asked-questions-faqs-haloacetic-acids-haas-in-drinking-water/ 
+
+4. Krasner S.W., McGuire M.J., Jacangelo J.G., Patania N.L., Reagan K.M., Aieta E.M. The Occurrence of Disinfection By-products in US Drinking Water. Am. Water Work. Assoc. 1989;81:41–53. doi: 10.1002/j.1551-8833.1989.tb03258.x. [CrossRef] [Google Scholar]
+
+5. Weinberg H.S., Krasner S.W., Richardson S.D., Thruston A.D. The Occurrence of Disinfection By-Products of Health Concern in Drinking Water: Results of a Nationwide DBP Occurrence Study. EPA; Washington, DC, USA: 2002. [Google Scholar]
+
+6. Singer P., Weinberg H.S., Brophy K., Liang L., Roberts M., Grisstede I., Krasner S.W., Baribeau H., Arora H., Najm I. Relative Dominance of Haloacetic Acids and Trihalomethanes in Treated Drinking Water. American Water Works Association; Denver, CO, USA: 2002. pp. 1–344. [Google Scholar]
+
+7. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6388255/#B1-ijerph-16-00471 (4, 5, 6)

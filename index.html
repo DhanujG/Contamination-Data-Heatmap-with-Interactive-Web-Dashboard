@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chemical Contamination Heatmap</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+
+    <!-- mini.css v1 (not v2), for making the styling and layout easy -->
+    <link rel="stylesheet" href="main/css/mini-default.min.css" />
+
+    <!-- Further css changes to customize look -->
+    <link rel="stylesheet" href="main/css/index.css" />
+
+    <!-- Zingchart, for making the map and doing the heavy lifting -->
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script src="https://cdn.zingchart.com/modules/zingchart-maps.min.js"></script>
+    <script src="https://cdn.zingchart.com/modules/zingchart-maps-geojson.min.js"></script>
+
+    <!--Chroma.js, for creating appropriate colors for the data values-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js"
+      integrity="sha512-yocoLferfPbcwpCMr8v/B0AB4SWpJlouBwgE0D3ZHaiP1nuu5djZclFEIj9znuqghaZ3tdCMRrreLoM8km+jIQ=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Makes everything on website run, like linking dropdowns and buttons to heatmap/infobox/zipcode modal  -->
+    <script src="main/js/index.js" type="module" async defer></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="about/about.html" class="button">[About]</a>
+      <a href="https://umecodata.github.io/website/" class="button">[EcoData]</a>
+      <a href="https://github.com/esun780/chem_heatmap.github.io" class="button">[GITHUB]</a>
+      <a href="#" class="logo">CHEMICAL HEATMAP</a>
+    </header>
+
+    <main class="container">
+      <div class="row">
+        <div id="left-column" class="col-sm-12 col-md-4">
+          <div id="controls">
+            <!-- Chemical Name/Year Selector and Make Heatmap Button -->
+            <div class="card">
+              <div class="input-group vertical section dark">
+                <label for="chemical-name-selector">Choose a chemical:</label>
+                <select
+                  name="chemical-name-selector"
+                  id="chemical-name-selector"
+                >
+                  <option selected disabled>---</option>
+                </select>
+
+                <label for="chemical-year-selector">Choose a year:</label>
+                <select
+                  name="chemical-year-selector"
+                  id="chemical-year-selector"
+                >
+                  <option selected disabled>---</option>
+                </select>
+
+                <button id="make-heatmap-btn" class="">
+                  Make Heatmap!
+                </button>
+              </div>
+            </div>
+
+            <!-- Get Zipcode Data Stuff -->
+            <div class="card">
+              <div class="input-group section dark">
+                <label for="zipcode-input">Get data for your zipcode:</label>
+                <input type="number" name="zipcode-input" id="zipcode-input" />
+
+                <!-- This stuff below is used to trigger a modal dialog: https://minicss.org/docs#modal-dialogs -->
+                <label
+                  for="modal-control"
+                  id="get-zipcode-data-btn"
+                  class="button"
+                  >Go!</label
+                >
+                <input type="checkbox" id="modal-control" class="modal" />
+                <div>
+                  <div class="card">
+                    <label for="modal-control" class="modal-close"></label>
+                    <div id="zipcode-modal-body" class="section"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- On small screens, heatmap will take up the entire screen width below the controls/infobox -->
+        <!-- On medium and large screens, heatmap will take up the right 8/12 of the page, with controls and infobox taking up 4/12 of the page on the left -->
+        <div id="right-column" class="col-sm-12 col-md-8">
+          <div id="loading-spinner"></div>
+          <div id="heatmap"></div>
+        </div>
+      </div>
+
+      <!-- Info Box -->
+      <div class="row cols-sm-12">
+        <div id="infobox-container" class="card">
+          <div id="infobox" class="section dark double-padded"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

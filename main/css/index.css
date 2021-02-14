@@ -1,0 +1,45 @@
+/* mini.css is excellent, but here are some small changes I'm making to its default colors
+* Also adding css so the header works the way we want
+*/
+:root {
+  --main-theme-color: #a26378;
+}
+
+#make-heatmap-btn,
+#get-zipcode-data-btn {
+  background-color: var(--main-theme-color);
+  color: white;
+}
+#chemical-name-selector:hover,
+#chemical-year-selector:hover,
+#zipcode-input:hover {
+  border-color: var(--main-theme-color);
+}
+
+/* The colored border on the left side of the code blocks used to display
+** chemical contamination values in the modal that pops up whe yu enter a zipcode 
+*/
+#zipcode-modal-body pre {
+  border-left-color: var(--main-theme-color);
+}
+
+/* Header links */
+header a.button {
+  float: right;
+}
+
+/* Adds some space around the heatmap */
+#right-column {
+  padding: 0.5rem; /* matches mini.css's --universal-padding variable */
+}
+
+/* There are weird padding spaces within the infobox-container, 
+** so this removes the main border and adds a replacement one 
+** around the actual infobox */
+#infobox-container {
+  border: none;
+}
+#infobox {
+  border-radius: 0.125rem; /* matches mini.css's --universal-border-radius variable */
+}
+  

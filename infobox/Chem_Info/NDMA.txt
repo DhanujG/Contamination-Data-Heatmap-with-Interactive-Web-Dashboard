@@ -1,0 +1,5 @@
+NDMA is an N-nitrosamine, a type of compound that has the generic chemical structure R2N–N=O, a deprotonated amine bonded to a nitroso group. N-nitrosamines are generally formed when a secondary or tertiary amine reacts with a nitrosating agent. The compounds are found at low levels in many foods, such as roasted meats, cheese, and beer, because of cooking and fermentation processes.{1} Exposure to high levels of NDMA may cause liver damage in humans.{2}
+
+1. https://cen.acs.org/pharmaceuticals/pharmaceutical-chemicals/NDMA-contaminant-found-multiple-drugs/98/i15
+
+2. https://www.epa.gov/sites/production/files/2014-03/documents/ffrrofactsheet_contaminant_ndma_january2014_final.pdf

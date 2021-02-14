@@ -1,0 +1,7 @@
+Oxyfluorfen is a white to orange or red-brown crystalline solid with a smoke-like odor. It may decompose if exposed to UV light. Oxyfluorfen is a diphenyl-ether herbicide used for broad spectrum pre- and post-emergent control of annual broadleaf and grassy weeds in a variety of tree fruit, nut, vine, and field crops. Oxyfluorfen is of low acute oral, dermal, and inhalation toxicity.Oxyfluorfen is highly toxic to aquatic invertebrates, freshwater clams, oysters, aquatic plants and fish.  The primary toxic effects are alterations in blood parameters (anemia) and in the liver. Oxyfluorfen is classified as a possible human carcinogen based on combined hepatocellular adenomas/carcinomas in the mouse carcinogenicity study. 
+
+Oxyfluorfen is stable under normal temperatures and pressures, but poses a slight fire hazard if exposed to heat or flame, and a fire and explosion hazard in the presence of strong oxidizers. It may burn but will not readily ignite. It may form flammable or explosive dust-air mixtures. Avoid contact with strong oxidizers, excessive heat, sparks or open flame. Thermal decomposition may release highly toxic fumes of fluorides and chlorides and toxic oxides of nitrogen and carbon.
+
+1. https://www3.epa.gov/pesticides/chem_search/reg_actions/reregistration/fs_PC-111601_1-Oct-02.pdf
+
+2. http://pmep.cce.cornell.edu/profiles/extoxnet/metiram-propoxur/oxyfluorfen-ext.html

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Zingchart, for making the map and doing the heavy lifting-->
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script src="https://cdn.zingchart.com/modules/zingchart-maps.min.js"></script>
+    <script src="https://cdn.zingchart.com/modules/zingchart-maps-geojson.min.js"></script>
+
+    <!--Chroma.js, for creating appropriate colors for the data values-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js" integrity="sha512-yocoLferfPbcwpCMr8v/B0AB4SWpJlouBwgE0D3ZHaiP1nuu5djZclFEIj9znuqghaZ3tdCMRrreLoM8km+jIQ==" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <button id="select_btn">Select Chemical/Year</button>
+    <div id='heatmap'></div>
+    <script src="heatmap.js" type="module"></script>
+
+    <!-- The script code below isn't necessary for making a heatmap, its just to add a rudimentary chem/year selector -->
+    <script type="module">
+      // Moving this code into here so that heatmap.js only contains actual heatmap-generating functions
+      // and not stuff to run the temporary button/dialog-based selector
+      import { chemicals_data } from "./json_data_files/chemicals_data.js";
+      import { make_heatmap } from "./heatmap.js";
+
+      
+      // add event listeners and stuff here later for actual dropdown
+      const select_btn = document.querySelector("#select_btn");
+      select_btn.onclick = () => {
+        const [chemical_name, year] = get_new_chemical_or_year(chemicals_data);
+        make_heatmap(chemical_name, year, "./json_data_files/simplified_michigan_zipcodes_3_pct.geo.json");
+      }
+
+      // this is currently just a simple number selection because I'm lazy,
+      // I'll make it into a nice dropdown later with the other subteam members
+      function get_new_chemical_or_year(chemicals_data) {
+        let chemicals_msg = "Enter the number corresponding to the chemical you want data for:\n";  
+        const chemical_names = Object.keys(chemicals_data);
+        chemical_names.forEach((chemical, index) => {
+          chemicals_msg += `${index}: ${chemical}\n`;
+        })
+        const chosen_chemical_num = prompt(chemicals_msg);
+        const chosen_chemical = chemical_names[chosen_chemical_num];
+
+        let years_msg = "Enter the number corresponding to the year you want data for:\n";
+        const years = Object.keys(chemicals_data[chosen_chemical]);
+        years.forEach((year, index) => {
+          years_msg += `${index}: ${year}\n`;
+        })
+        const chosen_year_num = prompt(years_msg);
+        const chosen_year = years[chosen_year_num];
+
+        return [chosen_chemical, chosen_year];
+      }
+    </script>
+  </body>
+</html>
